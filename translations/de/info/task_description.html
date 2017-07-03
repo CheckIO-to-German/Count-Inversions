@@ -1,36 +1,41 @@
 <p>
-    In computer science and discrete mathematics,
-    an <a href="http://en.wikipedia.org/wiki/Inversion_(discrete_mathematics)">inversion</a>
-    is a pair of places in a sequence where the elements in these places are out of their natural order. So, if we use
-    ascending order for a group of numbers, then an inversion is when larger numbers appear before lower number in a
-    sequence.
+  In der Informatik und der diskreten Mathematik ist eine
+  <a href="https://de.wikipedia.org/wiki/Fehlstand" target="_blank">
+  Inversion (Fehlstand)</a>
+  ein Paar von Elementen einer Folge, wobei die Reihenfolge der Elemente des Paares nicht
+  ihrer natürlichen Reihenfolge entspricht.<br>
+  Man spricht also von einem Fehlstand, wenn in einer Folge, die aufsteigend sortiert sein
+  soll, eine größere Zahl vor einer kleineren steht.
 </p>
 
 <p>
-    Check out this example sequence: (1, 2, 5, 3, 4, 7, 6) and we can see here three inversions<br>
-    - 5 and 3;
-    - 5 and 4;
-    - 7 and 6.
+  Sieh Dir diese Beispielfolge an:<br>
+  (1, 2, 5, 3, 4, 7, 6), hier erkennt man folgende drei Inversionen<br>
+  <ul>
+    <li style="white-space:nowrap">5 und 3, denn es gilt 5 > 3</li>
+    <li style="white-space:nowrap">5 und 4, denn es gilt 5 > 4</li>
+    <li style="white-space:nowrap">7 und 6, denn es gilt 7 > 6</li>
+  </ul>
 </p>
 
 <p>
-    You are given a sequence of unique numbers and you should count the number of inversions in this sequence.
+  Gegeben wird eine Folge von einmaligen Zahlen und Du sollst die Anzahl der Inversionen
+  in dieser Folge ermitteln.
 </p>
 
 <p>
-    <strong>Input: </strong> A sequence as a tuple of integers.
+  <strong>Eingabe:</strong> Eine Folge von ganzen Zahlen (int) als Tuple.
 </p>
 
 <p>
-    <strong>Output: </strong> The inversion number as an integer.
+  <strong>Ausgabe:</strong> Die Anzahl an Inversionen als Ganzzahl (int).
 </p>
-
 
 <div class="for_info_only">
-    <p>
-        <strong>Example:</strong>
-    </p>
-    <pre class="brush: python">{% if interpreter.slug == "js-node" %}
+  <p>
+    <strong>Beispiele:</strong>
+  </p>
+  <pre class="brush: python">{% if interpreter.slug == "js-node" %}
 countInversion([1, 2, 5, 3, 4, 7, 6]) == 3
 countInversion([0, 1, 2, 3]) == 0
 {% else %}
@@ -40,14 +45,14 @@ count_inversion((0, 1, 2, 3)) == 0
 </div>
 
 <p class="for_info_only">
-    <strong>How it is used: </strong>
-    In this mission you will get to experience the wonder of nested loops,
-    that is of course, if you don't use advanced algorithms.
+  <strong>Wozu das gut ist:</strong><br>
+  In dieser Mission darfst Du das Wunder der verschachtelten Schleifen erleben,
+  natürlich nur, sofern Du keinen fortgeschritteneren Algorithmus benutzt.
 </p>
 
 <p>
-    <strong>Precondition:</strong>
-    2 &lt; len(sequence) &lt; 200<br>
-    len(sequence) == len(set(sequence))<br>
-    all(-100 &lt; x &lt; 100 for x in sequence)
+  <strong>Bedingungen:</strong><br>
+  2 &lt; len(sequence) &lt; 200<br>
+  len(sequence) == len(set(sequence))<br>
+  all(-100 &lt; x &lt; 100 for x in sequence)
 </p>
