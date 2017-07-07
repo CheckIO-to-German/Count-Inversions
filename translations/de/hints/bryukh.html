@@ -1,40 +1,43 @@
 <body data-author="bryukh">
 <div class="question-answer">
-    <div class="question">
-        I have no idea how to start solving this mission
-    </div>
-    <div class="answer">
-        To iterate indexes in an array use "<a href="https://docs.python.org/2/library/functions.html#range">range</a>".
-<pre class="brush: python">
+  <div class="question">
+    Ich habe keine Ahnung, wie ich anfangen soll.
+  </div>
+  <div class="answer">
+    Um über Indizes eines Arrays zu iterieren, kannst Du die eingebaute Funktion
+    "<a href="https://docs.python.org/3.6/library/stdtypes.html#ranges">range</a>"
+    verwenden.
+    <pre class="brush: python">
 for i in range(len(array)):
     ...
     </pre>
-    </div>
+  </div>
 </div>
 <div class="question-answer">
-    <div class="question">
-        I need some help to proceed with the mission
-    </div>
-    <div class="answer">
-        The second loop (if you are using the simplest method) should be started "after" the first loop index.
-<pre class="brush: python">
+  <div class="question">
+    Ich brauche etwas Hilfe, um weiter zu kommen.
+  </div>
+  <div class="answer">
+    Die zweite Schleife (wenn Du die einfachste Methode verwendest) sollte nach dem ersten
+    Schleifenindex gestartet werden.
+    <pre class="brush: python">
 for i in range(len(array)):
     for j in range(i + 1, len(array)):
         ...
     </pre>
-    </div>
+  </div>
 </div>
 <div class="question-answer">
-    <div class="question">
-        I am gone half way through. Need help!
-    </div>
-    <div class="answer">
-        Just compare elements and count them.
-<pre class="brush: python">
+  <div class="question">
+    Ich hab's fast. Bitte hilf mir!
+  </div>
+  <div class="answer">
+    Jetzt musst Du nur noch vergleichen, ob ein Wert größer ist als einer seiner
+    Nachfolger, und zählen, wie oft das vorkommt.
+    <pre class="brush: python">
 if array[i] > array[j]:
     count += 1
     </pre>
-    </div>
+  </div>
 </div>
-
 </body>
